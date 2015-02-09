@@ -36,6 +36,9 @@
   		pcttimer();
   		
   		$( "#bts_button" ).click(function() {
+  			
+  			$('button').prop('disabled', true);
+  			
  			var Deposit_Limit_Request = new XMLHttpRequest();
 
 			Deposit_Limit_Request.open('GET', 'http://shapeshift.io/limit/btc_bitusd');
